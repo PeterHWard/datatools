@@ -1,0 +1,14 @@
+;; shadow-cljs configuration
+{:source-paths ["src/dev"
+                "src/main"
+                "src/test"]
+
+  ;; See: https://shadow-cljs.github.io/docs/UsersGuide.html#Leiningen
+  :lein true
+ 
+  :dependencies []
+
+  :builds {:datatools {:target :node-library
+                       ;;:output-dir "dist"
+                       :output-to "dist/bundle.js"
+                       :exports {:init app.core/init}}}}
