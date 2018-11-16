@@ -1,0 +1,1 @@
+Treat object graphs like tables in a relational database.
