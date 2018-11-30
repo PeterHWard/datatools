@@ -8,7 +8,12 @@
  
   :dependencies []
 
-  :builds {:datatools {:target :node-library
-                       ;;:output-dir "dist"
-                       :output-to "dist/bundle.js"
-                       :exports {:init app.core/init}}}}
+  :builds {:datatools 
+            {:target :node-library
+             :output-to "dist/bundle.js"
+             :exports {:init datatools.core/init}}
+            
+            :test 
+              {:target :node-test
+               :autorun true
+               :output-to "out/node-tests.js"}}}

@@ -1,4 +1,4 @@
-(ns app.core)
+(ns datatools.core)
 
 (defn init []
   (println "Hello World"))
